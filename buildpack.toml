@@ -1,0 +1,14 @@
+api = "0.4"
+
+[buildpack]
+id = "portersupport/heroku-buildpack-magic"
+version = "0.1"
+name = "buildpack magic"
+homepage = "https://github.com/NetsoftHoldings/heroku-buildpack-magic"
+description = "Build pack to setup headers for building ruby-filemagic"
+
+[[stacks]]
+id = "heroku-18"
+
+[[stacks]]
+id = "heroku-20"
