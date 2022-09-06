@@ -5,9 +5,12 @@ set -e
 BIN_DIR=$(cd $(dirname $0); pwd)
 ROOT_DIR=$(dirname $BIN_DIR)
 
-BUILD_DIR=$1
+LAYER_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
+
+BUILD_DIR=$LAYER_DIR/magic
+mkdir -p $BUILD_DIR
 
 echo RootDir: $ROOT_DIR
 echo BuildDir: $BUILD_DIR
